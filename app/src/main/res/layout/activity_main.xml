@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Selection"
+        android:layout_below="@+id/rvNumbers"
+
+        android:background="@color/colorPrimary"
+        android:text="Click for Result"
+        android:onClick="myoperation"/>
+
+    <Button
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Add"
+        android:layout_below="@+id/rvNumbers"
+        android:layout_marginLeft="5dp"
+
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Result" />
+
+    <EditText
+        android:id="@+id/Selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/rvNumbers"
+
+
+        android:hint="numbers"
+        android:gravity="center"
+         />
+
+
+</RelativeLayout>
